@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Assistant · FillrAI</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <nav id="sidebar"></nav>
+      <main>
+        <p class="muted">AI Assistant</p>
+        <h1>FillrAI Assistant</h1>
+        <p>Ask about your documents, schemes and eligibility. Powered by Gemini.</p>
+
+        <div class="card chat" id="content"></div>
+        <form class="row" id="chatForm">
+          <input id="message" placeholder="e.g. Which scholarships can I apply for?" autocomplete="off" required />
+          <button>Send</button>
+          <button class="ghost" type="button" id="clearBtn">Clear</button>
+        </form>
+      </main>
+    </div>
+
+    <script src="js/common.js"></script>
+    <script src="js/assistant.js"></script>
+  </body>
+</html>
+

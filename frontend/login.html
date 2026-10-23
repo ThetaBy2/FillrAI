@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign in · FillrAI</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main class="narrow">
+      <h2>FillrAI</h2>
+      <p class="muted">Keep your Aadhaar, PAN, ration card and more in one private vault, and reuse them to fill every government application you are eligible for.</p>
+
+      <form class="card" id="authForm">
+        <h1 id="title">Sign in</h1>
+
+        <div class="register-only" hidden>
+          <label for="name">Full name</label>
+          <input id="name" placeholder="e.g. Ananya Rao" />
+        </div>
+        <label for="email">Email</label>
+        <input id="email" type="email" required autocomplete="email" />
+        <div class="register-only" hidden>
+          <label for="phone">Phone (optional)</label>
+          <input id="phone" type="tel" maxlength="10" />
+        </div>
+        <label for="password">Password</label>
+        <input id="password" type="password" required minlength="6" />
+
+        <div class="banner" id="error" hidden></div>
+        <div class="row"><button id="submitBtn">Sign in</button></div>
+
+        <p class="muted">
+          <span id="switchText">New here?</span>
+          <button class="link" type="button" id="switchBtn">Create an account</button>
+        </p>
+      </form>
+    </main>
+
+    <script src="js/common.js"></script>
+    <script src="js/login.js"></script>
+  </body>
+</html>
+

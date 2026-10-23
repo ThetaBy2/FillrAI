@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Settings · FillrAI</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <nav id="sidebar"></nav>
+      <main>
+        <p class="muted">Settings</p>
+        <h1>Account</h1>
+
+        <form class="card" id="accountForm">
+          <label for="fullName">Full name</label>
+          <input id="fullName" required />
+          <label for="phone">Phone</label>
+          <input id="phone" type="tel" maxlength="10" />
+          <label for="email">Email</label>
+          <input id="email" type="email" disabled />
+          <div class="row">
+            <button>Save</button>
+            <span class="muted" id="savedMsg" hidden>Saved</span>
+          </div>
+        </form>
+
+        <div class="card">
+          <h3>Your profile (everything FillrAI knows from your vault)</h3>
+          <pre id="content">Loading…</pre>
+        </div>
+      </main>
+    </div>
+
+    <script src="js/common.js"></script>
+    <script src="js/settings.js"></script>
+  </body>
+</html>
+

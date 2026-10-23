@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Documents · FillrAI</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <nav id="sidebar"></nav>
+      <main>
+        <p class="muted">My Documents</p>
+        <h1>Your document vault</h1>
+        <p>Add each document once. Fetch it from DigiLocker, or upload a PDF / image.</p>
+        <div class="card" id="content"><p class="muted">Loading…</p></div>
+      </main>
+    </div>
+
+    <!-- DigiLocker OTP popup -->
+    <dialog id="otpDialog">
+      <form method="dialog" id="otpForm">
+        <h3>Enter DigiLocker OTP</h3>
+        <p class="muted">OTP sent to <span id="otpPhone"></span>. (Demo: it is printed in the server terminal.)</p>
+        <input id="otpInput" maxlength="6" inputmode="numeric" required />
+        <div class="row">
+          <button value="confirm">Verify &amp; fetch</button>
+          <button class="ghost" value="cancel" formnovalidate>Cancel</button>
+        </div>
+      </form>
+    </dialog>
+
+    <script src="js/common.js"></script>
+    <script src="js/documents.js"></script>
+  </body>
+</html>
+

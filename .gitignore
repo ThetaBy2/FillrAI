@@ -1,0 +1,14 @@
+# Environment and credentials
+.env
+.env.*
+!.env.example
+
+# Runtime data and dependencies
+node_modules/
+backend/node_modules/
+uploads/
+
+# Local logs
+*.log
+npm-debug.log*
+

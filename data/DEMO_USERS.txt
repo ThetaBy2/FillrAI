@@ -1,0 +1,19 @@
+FillrAI demo data — stored in MongoDB (database: fillrai)
+
+Password for all demo users: fillrai1234
+Logins: user01@example.com … user50@example.com
+
+Loaded automatically on first start (when there are no users), from
+backend/seed_data/fillrai_seed.json:
+  users                50 demo accounts
+  documents            18 documents per user
+  digilocker_profiles  government-side records used by "Fetch from DigiLocker"
+  applications, notifications, checklist_items, chat_messages
+  vault_doc_types, field_defs, schemes   (catalog)
+
+Reload everything (deletes current data):
+  docker compose down -v && docker compose up --build
+
+DigiLocker fetch (after "Remove" on a document):
+  My Documents -> Fetch from DigiLocker -> OTP is printed in the SERVER TERMINAL
+
